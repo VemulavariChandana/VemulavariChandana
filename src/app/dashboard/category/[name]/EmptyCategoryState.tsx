@@ -35,7 +35,7 @@ export const EmptyCategoryState = ({
         if (hasEvent) router.refresh()
     }, [hasEvent, router]);
 
-    const codeSnippet = `await fetch('${process.env.NEXT_PUBLIC_URL}/api/v1/events', {
+    const codeSnippet = `await fetch('${process.env.NEXT_PUBLIC_APP_URL}/api/v1/events', {
         method: 'POST',
         headers: {
           'Authorization': 'Bearer YOUR_API_KEY'
